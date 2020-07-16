@@ -20,6 +20,11 @@ N,K = map(int,input().split())
 
 adj = [[*map(int,input().split())] for _ in range(N)]
 
+for k in range(N):
+    for i in range(N):
+        for j in range(N):
+            adj[i][j] = min(adj[i][j],adj[i][k]+adj[k][j])
+
 Visited = [False]*N
 
 Ans = maxsize
