@@ -18,9 +18,7 @@ _Reviewed_ :   <img src="https://assets.leetcode.com/static_assets/public/webpac
 
 _Learned_ : Stack , Big-O notation
 
-_ToDo_ :    <img src="https://assets.leetcode.com/static_assets/public/webpack_bundles/images/logo-dark.e99485d9b.svg" width="75" height="75"/>[682 , 20  ,1603] Programmers [기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586)
-
-
+_ToDo_ :    <img src="https://assets.leetcode.com/static_assets/public/webpack_bundles/images/logo-dark.e99485d9b.svg" width="75" height="60"/>[682 , 20  ,1603] Programmers [기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586)
 
 
 
