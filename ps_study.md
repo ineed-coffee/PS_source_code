@@ -28,9 +28,11 @@ _Reviewed_ :   LeetCode [682 , 20  ,1603] , Programmers [기능개발](https://p
 
 _Learned_ : Linked-List , Tree (before delete)
 
-_ToDo_ :    LeetCode [1290,237] , 938 (트리 참고용 문제) , 더블링크 delete function (옵션) 
+_ToDo_ :    <span style="color:gold">Leet</span>Code [1290,237] , 938 (트리 참고용 문제) , 더블링크 delete function (옵션) 
 
 _ToRead_ : Tree (delete node) , hash concept , 
 
 ---
+
+
 
