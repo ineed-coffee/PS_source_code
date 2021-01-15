@@ -34,5 +34,17 @@ _ToRead_ : Tree (delete node) , hash concept ,
 
 ---
 
+__2021.01.15__ 
+
+_Reviewed_ :  <span style="color:gold">Leet</span>Code [1290,237] , 938 (트리 참고용 문제) , 더블링크 delete function (옵션) 
+
+_Learned_ : Tree (delete node) , hash concept , 
+
+_ToDo_ : LeetCode [1512(use dict) , 961(use set) , 1207(use dict&set)] , Programmers [해시 -> 완주하지 못한 선수 (use dict)]   
+
+_ToRead_ : Quick-sort ( + google `Divide and Conquer` if needed)
+
+---
+
 
 
