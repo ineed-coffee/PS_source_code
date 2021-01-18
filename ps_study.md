@@ -46,5 +46,24 @@ _ToRead_ : Quick-sort ( + google `Divide and Conquer` if needed)
 
 ---
 
+__2021.01.18__ 
+
+_Reviewed_ :  `LeetCode` [1512(use dict) , 961(use set) , 1207(use dict&set)] ,  `Programmers` [[완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576) (use dict)]   
+
+_Learned_ : Quick-sort , Recursion
+
+_ToDo_ : 
+
+| Site        | number            | keyword                | hint                                                         |
+| ----------- | ----------------- | ---------------------- | ------------------------------------------------------------ |
+| LeetCode    | 1710              | desc sort, greedy      | [3,3] 의 박스 정보가 있다고 할때, 3개의 박스를 모두 담을 필요없이 남은 공간이 2라면 2개만 담아도 된다. ( 2박스*3유닛 = 6유닛이 더 추가되는 꼴) |
+| LeetCode    | 1370              | desc, asc sort         | 실제로 글자를 하나씩 지우면서 진행하는것이 아니라 각 글자별 회수 dict 를 활용해서 |
+| Programmers | 42748(K번째 수)   | sorting multiple times | i , j , k 가 모두 1부터 시작한다는걸 잊으면 안됩니다! 인덱스는 0부터 시작해용 |
+| Programmers | 42746(가장 큰 수) | if 문이 특이한 sorting | 11번 테스트 케이스만 틀린다면 다음 반례를 확인하세요 : [0,0,0,0] => "0" |
+
+
+
+_ToRead_ : __Binary-Search__ (이진탐색 : 용철) , __Greedy__ (탐욕알고리즘 : 동재)
+
 
 
