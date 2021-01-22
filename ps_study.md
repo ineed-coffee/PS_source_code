@@ -61,9 +61,59 @@ _ToDo_ :
 | Programmers | 42748(K번째 수)   | sorting multiple times | i , j , k 가 모두 1부터 시작한다는걸 잊으면 안됩니다! 인덱스는 0부터 시작해용 |
 | Programmers | 42746(가장 큰 수) | if 문이 특이한 sorting | 11번 테스트 케이스만 틀린다면 다음 반례를 확인하세요 : [0,0,0,0] => "0" |
 
-
-
 _ToRead_ : __Binary-Search__ (이진탐색 : 용철) , __Greedy__ (탐욕알고리즘 : 동재)
 
+---
 
+__2021.01.22__ 
+
+_Reviewed_ :  `LeetCode` [1710 , 1370] ,  `Programmers` [[K번째 수](https://programmers.co.kr/learn/courses/30/lessons/42748) , [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746) ]   
+
+_Learned_ : Binary-Search
+
+_ToDo_ : `LeetCode` [852 , 1337 , 167] , 
+
+_ToRead_ : __Greedy__ 
+
+> 참고사항 (2 ways of binary-search with python)
+
+```python
+# iterable way
+
+def binary_search_iter(array,data):
+    low,high = 0,len(array)-1
+    
+    while low<high:
+        mid = (low+high)//2
+        if array[mid]<data:
+            low = mid+1
+        elif array[mid]>data:
+            high = mid
+        else:
+            return True
+        
+    return True if array[low]==data else False
+
+# recursive way
+
+def binary_search_recur(array,data):
+    
+    if len(array)==1:
+        if array[0]==data:
+            return True
+        else:
+            return False
+    if not len(array):
+        return False
+    
+    mid = len(array)//2
+    if array[mid]<data:
+        return binary_search_recur(array[mid:],data)
+    elif array[mid]>data:
+        return binary_search_recur(array[:mid],data)
+    else:
+        return True
+```
+
+---
 
