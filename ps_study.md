@@ -117,3 +117,24 @@ def binary_search_recur(array,data):
 
 ---
 
+__2021.02.01__ 
+
+_Reviewed_ :  `LeetCode` [852 , 1337 , 167]
+
+_Learned_ : Greedy
+
+_ToDo_ : `LeetCode` [1221 , 1716(크게 그리디 느낌은 아님 옵션 문제) , 1518 ] , `Programmers` [체육복](https://programmers.co.kr/learn/courses/30/lessons/42862) 
+
+_ToRead_ : __Dynamic Programming__ , __Graph__ 
+
+
+
+> 체육복 문제 참고사항
+
+```python
+- "reserve" 입력은 sort 되어있지 않음
+- 제약사항 5번을 자세히 읽어볼것
+```
+
+---
+
