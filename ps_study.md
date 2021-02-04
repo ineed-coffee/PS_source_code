@@ -138,3 +138,24 @@ _ToRead_ : __Dynamic Programming__ , __Graph__
 
 ---
 
+__2021.02.04__ 
+
+_Reviewed_ :  `LeetCode` [1221 , 1716(크게 그리디 느낌은 아님 옵션 문제) , 1518 ] , `Programmers` [체육복](https://programmers.co.kr/learn/courses/30/lessons/42862) 
+
+_Learned_ : Dynamic Programming , Graph
+
+_ToDo_ : `LeetCode` [746 , 1025] , `Programmers` [정수 삼각형](https://programmers.co.kr/learn/courses/30/lessons/43105) , [등굣길](https://programmers.co.kr/learn/courses/30/lessons/42898) 
+
+_ToRead_ : __Depth-First-Search__ 우와아아아앙 
+
+> 난이도 순서
+
+```
+- 746. Min Cost Climbing Stairs
+- https://programmers.co.kr/learn/courses/30/lessons/43105
+- 1025. Divisor Game (강추! , 검색 노노)
+- https://programmers.co.kr/learn/courses/30/lessons/42898 (뽀나스)
+
+※ 1025번 문제는 꼭 본인이 풀고 , 어떤식으로 DP 접근했는지 물어볼거임!!!
+```
+
