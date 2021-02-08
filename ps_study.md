@@ -146,7 +146,7 @@ _Learned_ : Dynamic Programming , Graph
 
 _ToDo_ : `LeetCode` [746 , 1025] , `Programmers` [정수 삼각형](https://programmers.co.kr/learn/courses/30/lessons/43105) , [등굣길](https://programmers.co.kr/learn/courses/30/lessons/42898) 
 
-_ToRead_ : __Depth-First-Search__ 우와아아아앙 
+_ToRead_ : __Breadth-First-Search__ 
 
 > 난이도 순서
 
@@ -158,4 +158,59 @@ _ToRead_ : __Depth-First-Search__ 우와아아아앙
 
 ※ 1025번 문제는 꼭 본인이 풀고 , 어떤식으로 DP 접근했는지 물어볼거임!!!
 ```
+
+---
+
+__2021.02.08__ 
+
+_Reviewed_ :  `LeetCode` [746 , 1025] , `Programmers` [정수 삼각형](https://programmers.co.kr/learn/courses/30/lessons/43105) , [등굣길](https://programmers.co.kr/learn/courses/30/lessons/42898) 
+
+_Learned_ : Breadth-First-Search
+
+_ToDo_ : `LeetCode` [559 , 690 , 107] , `Programmers` [타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165) , [네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) , [단어변환](https://programmers.co.kr/learn/courses/30/lessons/43163) 
+
+_ToRead_ : __Depth-First-Search__ 
+
+> Python BFS 
+
+```python
+graph = {}
+graph['A'] = ['B','C']
+graph['B'] = ['A','D']
+graph['C'] = ['A','G','H','I']
+graph['D'] = ['B','E','F']
+graph['E'] = ['D']
+graph['F'] = ['D']
+graph['G'] = ['C']
+graph['H'] = ['C']
+graph['I'] = ['C','J']
+graph['J'] = ['I']
+
+
+def bfs(start_node,target,n):
+
+    from collections import deque
+
+    visited=[False]*n
+    que=deque([start_node])
+
+    while que:
+        current_node = que.popleft()
+
+        for child in graph[current_node]:
+            if child == target:
+                return True
+            if not visited[ord(child)-65]:
+                visited[ord(child)-65]=True
+                que.append(child)
+    
+    return False
+
+```
+
+> 남은 개념 : dfs , back-track , union-find , heapq , 
+
+---
+
+
 
