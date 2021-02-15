@@ -212,5 +212,52 @@ def bfs(start_node,target,n):
 
 ---
 
+__2021.02.015__ 
 
+_Reviewed_ :  `LeetCode` [559 , 690 , 107] , `Programmers` [타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165) , [네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) , [단어변환](https://programmers.co.kr/learn/courses/30/lessons/43163) 
+
+_Learned_ : Depth-First-Search
+
+_ToDo_ : `LeetCode` [872 , 690 , 733] , `Programmers` [타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165) , [네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) 
+
+_ToRead_ : __Back-tracking__ 
+
+> DFS 2 ways
+
+```python
+adjoint_graph = {blah, blah}
+
+# iterable
+def dfs(n,start,target):
+    visited=[False]*n
+    
+    stack=[start]
+    while stack:
+        current_node = stack.pop()
+        visited[current_node]=True
+        if current_node == target:
+            return True
+        
+        for child_node in adjoint_graph[current_node]:
+            if not visited[child_node]:
+                stack.append(child_node)
+     return False
+
+# recursive
+visited=[False]*n (global field)
+n = len(adjoint_graph)
+
+def dfs(node,target):
+    global visited,adjoint_graph
+    
+    if node == target: return True
+    
+    visited[node]=True
+    for child_node in adjoint_graph[node]:
+            if not visited[child_node]:
+                dfs(child_node,target)
+    return False
+```
+
+---
 
