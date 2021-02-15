@@ -252,11 +252,12 @@ def dfs(node,target):
     
     if node == target: return True
     
+    Answer=False
     visited[node]=True
     for child_node in adjoint_graph[node]:
             if not visited[child_node]:
-                dfs(child_node,target)
-    return False
+                Answer = dfs(child_node,target)
+    return Answer
 ```
 
 ---
