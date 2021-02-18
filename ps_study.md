@@ -212,7 +212,7 @@ def bfs(start_node,target,n):
 
 ---
 
-__2021.02.015__ 
+__2021.02.15__ 
 
 _Reviewed_ :  `LeetCode` [559 , 690 , 107] , `Programmers` [타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165) , [네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) , [단어변환](https://programmers.co.kr/learn/courses/30/lessons/43163) 
 
@@ -262,3 +262,16 @@ def dfs(node,target):
 
 ---
 
+__2021.02.18__ 
+
+_Reviewed_ :  `LeetCode` [872 , 690 , 733] , `Programmers` [타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165) , [네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) 
+
+_Learned_ : Back-Tracking
+
+_ToDo_ : `LeetCode` [797 , 401] , `Programmers` [여행 경로](https://programmers.co.kr/learn/courses/30/lessons/43164) 
+
+_ToRead_ : __Union-Find (Kruskal)__ 
+
+
+
+ 
