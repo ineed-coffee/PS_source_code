@@ -268,7 +268,7 @@ _Reviewed_ :  `LeetCode` [872 , 690 , 733] , `Programmers` [타겟 넘버](https
 
 _Learned_ : Back-Tracking
 
-_ToDo_ : `LeetCode` [797 , 401] , `Programmers` [여행 경로](https://programmers.co.kr/learn/courses/30/lessons/43164) 
+_ToDo_ : `LeetCode` [797 , 401 , 실력체크Lv1 , 실력체크Lv2] , `Programmers` [여행 경로](https://programmers.co.kr/learn/courses/30/lessons/43164) 
 
 _ToRead_ : __Union-Find (Kruskal)__ 
 
