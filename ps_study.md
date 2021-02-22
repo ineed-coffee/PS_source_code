@@ -272,6 +272,52 @@ _ToDo_ : `LeetCode` [797 , 401 , 실력체크Lv1 , 실력체크Lv2] , `Programme
 
 _ToRead_ : __Union-Find (Kruskal)__ 
 
+***
+
+__2021.02.22__ 
+
+_Reviewed_ :  `LeetCode` [797 , 401 , 실력체크Lv1 , 실력체크Lv2] , `Programmers` [여행 경로](https://programmers.co.kr/learn/courses/30/lessons/43164)  
+
+_Learned_ : Union-Find (Kruskal)
+
+_ToDo_ : `LeetCode` [547 (DFS | Union-Find) , 1319 (옵션)] , `BaekJoon`  [집합의 표현](https://www.acmicpc.net/problem/1717) , [친구 네트워크](https://www.acmicpc.net/problem/4195) 
+
+_ToRead_ : __Heapq package__ 
+
+> Union - Find cheat code
+
+```python
+def find(node):
+
+    if parent[node]==node:
+        return node
+    
+    parent[node]=find(parent[node])
+    return parent[node]
+
+def union(node_a,node_b):
+    head_a,head_b = find(node_a),find(node_b)
+
+    if rank[head_a]>rank[head_b]:
+        parent[head_b]=head_a
+    else:
+        parent[head_a]=head_b
+        if rank[head_a]==rank[head_b]:
+            rank[head_b]+=1
+    return
+
+if __name__ == "__main__" :
+
+    graph = intpqebneobiqneobqienb
+
+    # [[0,4],[2,1],[4,2],.....]
 
 
- 
+    parent=[i for i in range(n)]
+    rank=[0]*n
+
+    for a,b in graph:
+        if find(a)!=find(b):
+            union(a,b)
+```
+
