@@ -321,3 +321,40 @@ if __name__ == "__main__" :
             union(a,b)
 ```
 
+> 집합의 표현 입출력 cheat code
+
+```python
+import sys
+sys.setrecursionlimit(10**6)
+
+if __name__ == "__main__" :
+
+    input = sys.stdin.readline
+    n,m = map(int,input().split())
+    commands=[list(map(int,input().split())) for _ in range(m)]
+    
+    # your code starts here
+```
+
+> 친구 네트워크 입출력 cheat code
+
+```python
+import sys
+sys.setrecursionlimit(10**5)
+
+if __name__ == "__main__" :
+    
+    input = sys.stdin.readline
+    T = int(input().strip())
+
+    for _ in range(T):
+        F = int(input().strip())
+        
+        for connection in range(F):
+            a,b = input().strip().split()
+            
+            # your code starts here
+```
+
+***
+
