@@ -358,3 +358,19 @@ if __name__ == "__main__" :
 
 ***
 
+__2021.02.25__ 
+
+_Reviewed_ :  `LeetCode` [547 (DFS | Union-Find) , 1319 (옵션)] , `BaekJoon`  [집합의 표현](https://www.acmicpc.net/problem/1717) , [친구 네트워크](https://www.acmicpc.net/problem/4195) 
+
+_Learned_ : Heapq package
+
+_ToDo_ : `LeetCode` [692 , 1642 (option)] , `Programmers` [더 맵게](https://programmers.co.kr/learn/courses/30/lessons/42626) , [디스크 컨트롤러 (2 way , 1.아무 방식 2. heapq)](https://programmers.co.kr/learn/courses/30/lessons/42627) 
+
+_ToRead_ : __X__ ( 레벨 테스트 예정. 50점 미만 F)
+
+Concept remaining : two-pointer , mst( Floyd-Warshall , Dijstra , Kruskal , Prim , Belman-ford , ) , Bit-manipulation 
+
+---
+
+
+
