@@ -34,7 +34,7 @@ FROM TABLE_NAME;
 
 ```mysql
 SELECT LENGTH(FIELD_NAME)
-FROM TABLE_NAME
+FROM TABLE_NAME;
 ```
 
 ​	
@@ -44,7 +44,7 @@ FROM TABLE_NAME
 ```mysql
 SELECT FEILD1
 FROM TABLE_NAME
-ORDER BY FIELD2 ASC , FIELD3 DESC....
+ORDER BY FIELD2 ASC , FIELD3 DESC....;
 ```
 
 ​	
@@ -54,12 +54,40 @@ ORDER BY FIELD2 ASC , FIELD3 DESC....
 ```mysql
 SELECT FIELD_NAME
 FROM TABLE_NAME
-LIMIT ROW_CNT
+LIMIT ROW_CNT;
 ```
 
 ​	
 
+### `Connecting queries`
 
+```mysql
+(SELECT FIELD_NAME
+FROM TABLE_NAME)
+UNION
+(SELECT FIELD_NAME
+FROM TABLE_NAME);
+```
 
+​	
 
+### `Substring` 
+
+```mysql
+SELECT LEFT("HELLO",1)
+SELECT RIGHT("HELLO",1)
+SELECT SUBSTR("HELLO",3,1)
+```
+
+​	
+
+### `Regular Expression` 
+
+```mysql
+SELECT *
+FROM TABLE_NAME
+WHERE FIELD REGEXP "^[A-Z]+.*[0-1]$"
+```
+
+​	
 
