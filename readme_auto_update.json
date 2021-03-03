@@ -1,6 +1,6 @@
 {
-"folder_names":["BOJ","HackerRank","Code_Forces","LeetCode","Programmers","HackerRank/SQL"],
-"Sites":["BaekJoon","Hacker Rank","Code Forces","LeetCode","Programmers","Hacker Rank(SQL)"],
-"Links":["https://www.acmicpc.net/","https://www.hackerrank.com/","https://codeforces.com/","https://leetcode.com/","https://programmers.co.kr/","https://www.hackerrank.com/domains/sql"],
-"TYPE":[".py",".py",".py",".py",".py",".sql"]
+"folder_names":["BOJ","HackerRank","Code_Forces","LeetCode","Programmers","HackerRank/SQL","Programmers/SQL"],
+"Sites":["BaekJoon","Hacker Rank","Code Forces","LeetCode","Programmers","Hacker Rank(SQL)","Programmers(SQL)"],
+"Links":["https://www.acmicpc.net/","https://www.hackerrank.com/","https://codeforces.com/","https://leetcode.com/","https://programmers.co.kr/","https://www.hackerrank.com/domains/sql","https://programmers.co.kr/learn/challenges?tab=sql_practice_kit"],
+"TYPE":[".py",".py",".py",".py",".py",".sql",".sql"]
 }
