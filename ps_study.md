@@ -372,5 +372,13 @@ Concept remaining : two-pointer , mst( Floyd-Warshall , Dijstra , Kruskal , Prim
 
 ---
 
+__2021.03.04__ 
 
+_Reviewed_ :  `LeetCode` [692] , `Programmers` [더 맵게](https://programmers.co.kr/learn/courses/30/lessons/42626) , [디스크 컨트롤러 (2 way , 1.아무 방식 2. heapq)](https://programmers.co.kr/learn/courses/30/lessons/42627) 
+
+_Learned_ : `LeetCode` daily challenge , `Programmers` level check 2
+
+_Result_ : 50 points
+
+_ToDo_ : daily challenge (for daily ps commit) , level check (2 or 3) , 
 
