@@ -382,3 +382,19 @@ _Result_ : 50 points
 
 _ToDo_ : daily challenge (for daily ps commit) , level check (2 or 3) , 
 
+***
+
+__2021.03.08__ 
+
+_Reviewed_ :  `LeetCode` daily challenge
+
+_Challenged_ : `Programmers` Skill-check Lvl.3
+
+_Result_ : 0 points
+
+_ToDo_ : `LeetCode` daily challenge , Trie-structure , failed-problem retry
+
+***
+
+
+
