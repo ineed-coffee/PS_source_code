@@ -396,5 +396,12 @@ _ToDo_ : `LeetCode` daily challenge , Trie-structure , failed-problem retry
 
 ***
 
+__2021.03.11__ 
 
+_Reviewed_ :  `LeetCode` daily challenge ,failed-problem
 
+_Challenged_ : `Programmers` Skill-check Lvl.3
+
+_Result_ : 50 points
+
+_ToDo_ : `LeetCode` daily challenge , failed-problem retry
