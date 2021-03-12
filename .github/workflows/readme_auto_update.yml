@@ -41,4 +41,4 @@ jobs:
 
     - name: check-modified
       run: |
-        ls
+        ls -al
