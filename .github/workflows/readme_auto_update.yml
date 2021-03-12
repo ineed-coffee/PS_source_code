@@ -6,6 +6,8 @@ name: README auto update
 on:
   push:
     branches: [ master ]
+  paths:
+  - './'
     
 jobs:
   build:

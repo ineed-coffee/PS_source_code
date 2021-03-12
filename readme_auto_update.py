@@ -61,8 +61,8 @@ if __name__ == "__main__":
         f.write(readme) 
     
     try:
-        cur_path=os.getcwd()
-        res=subprocess.check_call(f"cd {cur_path}")
+        #cur_path=os.getcwd()
+        #res=subprocess.check_call(f"cd {cur_path}")
         response= subprocess.check_output("git status -sb", universal_newlines=True)
     except subprocess.CalledProcessError:
         exit()
