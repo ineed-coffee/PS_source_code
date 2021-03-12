@@ -59,8 +59,10 @@ if __name__ == "__main__":
 
     with open("README.md",'w') as f:
         f.write(readme) 
-
+    
     try:
+        res=subprocess.check_call('''git config --global user.name "ineedcoffee"''')
+        res=subprocess.check_call('''git config --global user.email "leey93ssu@gmail.com"''')
         response= subprocess.check_output("git status -sb", universal_newlines=True)
     except CalledProcessError:
         exit()
