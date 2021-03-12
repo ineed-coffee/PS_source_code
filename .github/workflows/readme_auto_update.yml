@@ -11,6 +11,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    env:
+      working-directory: ./
 
     steps:
     - uses: actions/checkout@v2
@@ -34,11 +36,9 @@ jobs:
         git config --local user.email "leey93ssu@gmail.com"
         git config --local user.name "ineedcoffee" 
         git status
+        ls -al
 
     - name: Update If Needed
       run: |
         python3 test.py
-
-    - name: check-modified
-      run: |
-        ls -al
+        working-directory: ${{ env.working-directory }}
