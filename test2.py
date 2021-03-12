@@ -12,4 +12,4 @@ if __name__ == "__main__":
             f.write("1")
     else:
         with open("commit_or_not.txt","w") as f:
-            f.write("1")
+            f.write("0")
