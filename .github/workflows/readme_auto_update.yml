@@ -40,7 +40,7 @@ jobs:
     - name: Update if Modified
       run: |
         res=$(<commit_or_not.txt)
-        if [ ${val} -ne 1 ]; then
+        if [ ${val} -ne "1" ]; then
         ehco "README not modified"
         exit -1
         fi
