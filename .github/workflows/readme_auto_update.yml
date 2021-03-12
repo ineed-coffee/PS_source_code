@@ -33,9 +33,9 @@ jobs:
 
     - name: Modify README 
       run: |
-        python3 test1.py
+        python3 readme_auto_update.py
         git status -sb |tee status.txt
-        python3 test2.py
+        python3 modification_check.py
 
     - name: Update if Modified
       run: |
@@ -44,7 +44,8 @@ jobs:
           echo "README modified"
           git add README.md
           git commit -m "readme auto-updated :battery:"
-          exit 0
+        else
+          echo "README not modified"
         fi
 
     - name: Push

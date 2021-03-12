@@ -2,7 +2,6 @@ import re
 import os
 import json
 from collections import deque
-import subprocess
 
 def get_files(files,type_):
     return [file for file in files if file.endswith(type_)]
@@ -59,34 +58,3 @@ if __name__ == "__main__":
 
     with open("README.md",'w') as f:
         f.write(readme) 
-    
-    try:
-        #cur_path=os.getcwd()
-        #res=subprocess.check_call(f"cd {cur_path}")
-        response= subprocess.check_output("git status -sb", universal_newlines=True)
-    except subprocess.CalledProcessError:
-        exit()
-
-    readme_modified_pattern=re.compile(r"(M).*(README.md)")
-
-    if readme_modified_pattern.search(response):
-        print("README.md file modified.")
-
-        try:
-            res=subprocess.check_call("git add README.md")
-        except subprocess.CalledProcessError:
-            exit()
-
-        try:
-            res=subprocess.check_call('''git commit -m "readme auto-updated :battery:"''')
-        except subprocess.CalledProcessError:
-            exit()
-
-        try:
-            res=subprocess.check_call("git push")
-        except subprocess.CalledProcessError:
-            exit()
-
-        print("README.md auto-updated")
-    else:
-        print("README.md file not modified.")
