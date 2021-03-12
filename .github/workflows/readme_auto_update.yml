@@ -37,6 +37,3 @@ jobs:
     - name: Update If Needed
       run: |
         python3 readme_auto_update.py
-      with:
-        branch: 'master'
-        github_token: $ 
