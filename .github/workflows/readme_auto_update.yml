@@ -41,9 +41,12 @@ jobs:
       shell: bash
       run: |
         res=$(<commit_or_not.txt)
-        if [ ${res} -ne 1 ]; then
-        ehco "README not modified"
-        exit -1
+        if [ ${res} -eq 0 ]; then
+          ehco "README not modified"
+          exit -1
+        else
+          ehco "README modified"
+          exit 0
         fi
 
     - name: Push
