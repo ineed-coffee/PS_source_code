@@ -2,7 +2,6 @@ import re
 import os
 import json
 from collections import deque
-import subprocess
 
 def get_files(files,type_):
     return [file for file in files if file.endswith(type_)]
@@ -59,5 +58,3 @@ if __name__ == "__main__":
 
     with open("README.md",'w') as f:
         f.write(readme) 
-    
-res=subprocess.check_call("ls -al")

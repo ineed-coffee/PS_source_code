@@ -25,20 +25,29 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    #- name: Lint with flake8
-    #  run: |
-    #    # stop the build if there are Python syntax errors or undefined names
-    #    flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-    #    # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
-    #    flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
     - name: VCS Configuration
       run: |
         git config --local user.email "leey93ssu@gmail.com"
         git config --local user.name "ineedcoffee" 
-        git status
-        ls -al
 
-    - name: Update If Needed
+    - name: Modify README 
       run: |
-        python3 test.py
-        working-directory: ${{ env.working-directory }}
+        python3 test1.py
+        git status -sb |tee status.txt
+        python3 test2.py
+
+    - name: Update if Modified
+      run: |
+        res=$(<commit_or_not.txt)
+        if [ ${val} -ne 1 ]; then
+        ehco "README not modified"
+        exit -1
+        fi
+
+    - name: Push
+      uses: ad-m/github-push-action@master
+      with:
+        branch: 'master'
+        github_token: $ 
+      
