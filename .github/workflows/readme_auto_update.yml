@@ -6,8 +6,8 @@ name: README auto update
 on:
   push:
     branches: [ master ]
-  paths:
-  - './'
+    paths:
+      - './'
     
 jobs:
   build:
@@ -35,6 +35,7 @@ jobs:
       run: |
         git config --local user.email "leey93ssu@gmail.com"
         git config --local user.name "ineedcoffee" 
+        git status
 
     - name: Update If Needed
       run: |
