@@ -61,10 +61,8 @@ if __name__ == "__main__":
         f.write(readme) 
     
     try:
-        res=subprocess.check_call('''git config --global user.name "ineedcoffee"''')
-        res=subprocess.check_call('''git config --global user.email "leey93ssu@gmail.com"''')
         response= subprocess.check_output("git status -sb", universal_newlines=True)
-    except CalledProcessError:
+    except subprocess.CalledProcessError:
         exit()
 
     readme_modified_pattern=re.compile(r"(M).*(README.md)")
@@ -74,17 +72,17 @@ if __name__ == "__main__":
 
         try:
             res=subprocess.check_call("git add README.md")
-        except CalledProcessError:
+        except subprocess.CalledProcessError:
             exit()
 
         try:
             res=subprocess.check_call('''git commit -m "readme auto-updated :battery:"''')
-        except CalledProcessError:
+        except subprocess.CalledProcessError:
             exit()
 
         try:
             res=subprocess.check_call("git push")
-        except CalledProcessError:
+        except subprocess.CalledProcessError:
             exit()
 
         print("README.md auto-updated")
