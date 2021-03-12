@@ -37,4 +37,8 @@ jobs:
 
     - name: Update If Needed
       run: |
-        python3 readme_auto_update.py
+        python3 test.py
+
+    - name: check-modified
+      run: |
+        git status
