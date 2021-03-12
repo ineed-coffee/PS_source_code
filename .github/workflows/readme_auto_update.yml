@@ -40,11 +40,10 @@ jobs:
     - name: Update if Modified
       run: |
         res=$(<commit_or_not.txt)
-        if [ ${res} -eq 0 ]; then
-          echo "README not modified"
-          exit -1
-        else
+        if [ ${res} -eq 1 ]; then
           echo "README modified"
+          git add README.md
+          git commit -m "readme auto-updated :battery:"
           exit 0
         fi
 
