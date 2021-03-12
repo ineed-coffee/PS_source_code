@@ -38,7 +38,6 @@ jobs:
         python3 test2.py
 
     - name: Update if Modified
-      shell: bash
       run: |
         res=$(<commit_or_not.txt)
         if [ ${res} -eq 0 ]; then
