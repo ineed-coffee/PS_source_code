@@ -41,7 +41,7 @@ jobs:
       shell: bash
       run: |
         res=$(<commit_or_not.txt)
-        if [ ${res} -ne "1" ]; then
+        if [ ${res} -ne 1 ]; then
         ehco "README not modified"
         exit -1
         fi
