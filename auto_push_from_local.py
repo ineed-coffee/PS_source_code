@@ -27,8 +27,8 @@ if __name__ == "__main__":
     if py_file:
         try:
             for py in py_file:
-                print(f"git add {py}")
                 py=reformat(py)
+                print(f"git add {py}")
                 response= subprocess.check_call(f"git add {py}")
                 print("added ps")
             response= subprocess.check_call('''git commit -m "daily ps :cloud:"''')
@@ -38,6 +38,7 @@ if __name__ == "__main__":
     if sql_file:
         try:
             for sql in sql_file:
+                sql=reformat(sql)
                 print(f"git add {sql}")
                 response= subprocess.check_call(f"git add {sql}")
                 print("added sql")
