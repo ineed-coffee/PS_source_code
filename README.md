@@ -7,4 +7,4 @@ _included_
 * [Programmers](https://programmers.co.kr/):38 solutions  
 * [Hacker Rank(SQL)](https://www.hackerrank.com/domains/sql):46 solutions  
 * [Programmers(SQL)](https://programmers.co.kr/learn/challenges?tab=sql_practice_kit):29 solutions  
-* [LeetCode(SQL)](https://leetcode.com/problemset/database/):3 solutions  
+* [LeetCode(SQL)](https://leetcode.com/problemset/database/):4 solutions  
