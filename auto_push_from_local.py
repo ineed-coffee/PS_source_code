@@ -7,13 +7,11 @@ def reformat(path):
     return "/".join(path_list)
 
 if __name__ == "__main__":
-    try:
-        response= subprocess.call("git pull")
-    except subprocess.CalledProcessError:
-        pass
+
+    response= subprocess.call("git pull")
         
     try:
-        response= subprocess.check_output("git status -sb", universal_newlines=True)
+        response= subprocess.check_output("git status -sb", universal_newlines=True,encoding="utf-8")
     except subprocess.CalledProcessError:
         pass
 
