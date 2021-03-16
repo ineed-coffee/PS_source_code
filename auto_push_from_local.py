@@ -9,6 +9,7 @@ def reformat(path):
 if __name__ == "__main__":
 
     response= subprocess.call("git pull")
+    response= subprocess.call("git add -u")
         
     try:
         response= subprocess.check_output("git status -sb", universal_newlines=True,encoding="utf-8")
