@@ -1,7 +1,7 @@
 # source code of PS problems  
 _included_  
 * [BaekJoon](https://www.acmicpc.net/):152 solutions  
-* [Hacker Rank](https://www.hackerrank.com/):29 solutions  
+* [Hacker Rank](https://www.hackerrank.com/):30 solutions  
 * [Code Forces](https://codeforces.com/):17 solutions  
 * [LeetCode](https://leetcode.com/):111 solutions  
 * [Programmers](https://programmers.co.kr/):39 solutions  
