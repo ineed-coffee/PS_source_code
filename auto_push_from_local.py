@@ -1,13 +1,14 @@
 import os
 import subprocess
 
-def reformat(path):
+def split(path):
+    global abs_path
     path_list=path.split("/")
-    path_list[-1]= '"'+path_list[-1]+'"'
-    return "/".join(path_list)
+    name= '"'+path_list[-1]+'"'
+    return os.path.join(abs_path,"/".join(path_list[:-1])),name
 
 if __name__ == "__main__":
-
+    abs_path=os.getcwd()
     response= subprocess.call("git pull")
     response= subprocess.call("git add -u")
         
@@ -23,8 +24,13 @@ if __name__ == "__main__":
     if py_file:
         try:
             for py in py_file:
-                py=reformat(py)
-                response= subprocess.check_call(f"git add {py}")
+                cd,name=split(py)
+                print(py)
+                print(cd)
+                print(name)
+                #if cd:
+                #    response= subprocess.check_call(f"cd {cd}")
+                response= subprocess.check_call(f"git add {name}",cwd=cd)
             response= subprocess.check_call('''git commit -m "daily ps :cloud:"''')
         except subprocess.CalledProcessError:
             print("Error while commiting .py files")
