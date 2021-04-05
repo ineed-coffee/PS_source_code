@@ -25,11 +25,6 @@ if __name__ == "__main__":
         try:
             for py in py_file:
                 cd,name=split(py)
-                print(py)
-                print(cd)
-                print(name)
-                #if cd:
-                #    response= subprocess.check_call(f"cd {cd}")
                 response= subprocess.check_call(f"git add {name}",cwd=cd)
             response= subprocess.check_call('''git commit -m "daily ps :cloud:"''')
         except subprocess.CalledProcessError:
@@ -38,8 +33,8 @@ if __name__ == "__main__":
     if sql_file:
         try:
             for sql in sql_file:
-                sql=reformat(sql)
-                response= subprocess.check_call(f"git add {sql}")
+                cd,name=split(sql)
+                response= subprocess.check_call(f"git add {sql}",cwd=cd)
             response= subprocess.check_call('''git commit -m "daily sql :palm_tree:"''')
         except subprocess.CalledProcessError:
             print("Error while commiting .sql files")
